@@ -1,31 +1,11 @@
 ````markdown
-# System Simulation
+ System Simulation
 
-**A Restaurant Simulation built with Java and JavaFX**
+A Restaurant Simulation built with Java and JavaF
 
----
 
-## Table of Contents
-1. [Overview](#28)
-2. [Features](#features)
-3. [Architecture](#architecture)
-4. [Getting Started](#getting-started)
-   - [Prerequisites](#prerequisites)
-   - [Installation](#installation)
-   - [Running the Simulation](#running-the-simulation)
-5. [Usage](#usage)
-6. [Project Structure](#project-structure)
-7. [How It Works](#how-it-works)
-8. [Class Diagram](#class-diagram)
-9. [Flow Diagram](#flow-diagram)
-10. [Extending / Contributing](#extending--contributing)
-11. [Known Issues / Limitations](#known-issues--limitations)
-12. [Future Improvements](#future-improvements)
-13. [License](#license)
 
----
-
-## Overview
+# Overview
 
 This project is a **restaurant simulation system** implemented in **Java** using **JavaFX** for the graphical interface.  
 It models key entities in a restaurant – customers, waiters, tables, menu items – and handles interactions like ordering, serving, and billing.  
