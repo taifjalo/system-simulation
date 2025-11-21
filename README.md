@@ -1,20 +1,39 @@
-````markdown
- System Simulation
+# System Simulation
 
-A Restaurant Simulation built with Java and JavaF
+**A Restaurant Simulation built with Java and JavaFX**
 
+---
 
+## Table of Contents
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Architecture](#architecture)
+4. [Getting Started](#getting-started)
+   - [Prerequisites](#prerequisites)
+   - [Installation](#installation)
+   - [Running the Simulation](#running-the-simulation)
+5. [Usage](#usage)
+6. [Project Structure](#project-structure)
+7. [How It Works](#how-it-works)
+8. [Class Diagram](#class-diagram)
+9. [Flow Diagram](#flow-diagram)
+10. [Extending / Contributing](#extending--contributing)
+11. [Known Issues / Limitations](#known-issues--limitations)
+12. [Future Improvements](#future-improvements)
+13. [License](#license)
 
-# Overview
+---
 
-This project is a restaurant simulation system implemented in Java using JavaFX for the graphical interface.  
+## Overview
+
+This project is a **restaurant simulation system** implemented in **Java** using **JavaFX** for the graphical interface.  
 It models key entities in a restaurant – customers, waiters, tables, menu items – and handles interactions like ordering, serving, and billing.  
 
 It’s a learning project to practice object-oriented design, concurrency, GUI programming, and simulation logic.
 
 ---
 
-# Features
+## Features
 
 - Customers, Waiters, Tables, and Menu Items modeled via Java classes
 - Simulation of order placement and service flow
@@ -24,7 +43,7 @@ It’s a learning project to practice object-oriented design, concurrency, GUI p
 
 ---
 
-# Architecture
+## Architecture
 
 - **Model:** Domain entities (Customer, Table, MenuItem, Order, Waiter)  
 - **Controller:** Handles simulation logic, customer generation, and order handling  
@@ -33,15 +52,15 @@ It’s a learning project to practice object-oriented design, concurrency, GUI p
 
 ---
 
-# Getting Started
+## Getting Started
 
-## Prerequisites
+### Prerequisites
 
 - Java JDK 11+  
 - Maven (optional, for building)  
 - JavaFX SDK  
 
-## Installation
+### Installation
 
 ```bash
 git clone https://github.com/taifjalo/system-simulation.git
@@ -49,7 +68,7 @@ cd system-simulation
 mvn clean install
 ````
 
-## Running the Simulation
+### Running the Simulation
 
 * Using Maven:
 
@@ -57,11 +76,11 @@ mvn clean install
 mvn javafx:run
 ```
 
- Or run the `MainApp.java` class from your IDE.
+* Or run the `MainApp.java` class from your IDE.
 
 ---
 
-# Usage
+## Usage
 
 1. Open the application → see restaurant layout
 2. Customers arrive over time
@@ -73,7 +92,7 @@ mvn javafx:run
 
 ---
 
-# Project Structure
+## Project Structure
 
 ```
 system-simulation/
@@ -92,7 +111,7 @@ system-simulation/
 
 ---
 
-# How It Works
+## How It Works
 
 **Simulation Flow:**
 
@@ -105,7 +124,7 @@ system-simulation/
 
 ---
 
-# Class Diagram
+## Class Diagram
 
 ```mermaid
 classDiagram
@@ -150,7 +169,7 @@ classDiagram
 
 ---
 
-# Flow Diagram
+## Flow Diagram
 
 ```mermaid
 flowchart TD
@@ -167,7 +186,7 @@ flowchart TD
 
 ---
 
-# Extending / Contributing
+## Extending / Contributing
 
 Ideas for improvements:
 
@@ -180,7 +199,7 @@ Ideas for improvements:
 
 ---
 
-# Known Issues / Limitations
+## Known Issues / Limitations
 
 * Simple queuing logic
 * No persistence (state lost when closing)
@@ -189,7 +208,7 @@ Ideas for improvements:
 
 ---
 
-# Future Improvements
+## Future Improvements
 
 * Dashboard with metrics (charts, logs)
 * Configurable simulation parameters via UI/config file
@@ -200,7 +219,7 @@ Ideas for improvements:
 
 ---
 
-# License
+## License
 
 Currently unlicensed. Consider adding **MIT** or **Apache 2.0** license for open source.
 
