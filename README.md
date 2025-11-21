@@ -222,12 +222,3 @@ Ideas for improvements:
 ## License
 
 Currently unlicensed. Consider adding **MIT** or **Apache 2.0** license for open source.
-
-```
-
----
-
-If you want, I can also **create an image version of the class + flow diagrams** and update the README so it looks more professional visually on GitHub. This way, Mermaid isn’t required to render diagrams.  
-
-Do you want me to do that?
-```
