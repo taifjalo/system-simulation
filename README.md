@@ -1,7 +1,3 @@
-Absolutely! Here’s a **ready-to-upload `README.md`** for your GitHub project `system-simulation`. It includes a **professional description, installation instructions, usage, diagrams (Mermaid), and contribution guidelines**. You can copy this directly into your repository.
-
----
-
 ````markdown
 # System Simulation
 
@@ -10,7 +6,7 @@ Absolutely! Here’s a **ready-to-upload `README.md`** for your GitHub project `
 ---
 
 ## Table of Contents
-1. [Overview](#overview)
+1. [Overview](#28)
 2. [Features](#features)
 3. [Architecture](#architecture)
 4. [Getting Started](#getting-started)
@@ -97,7 +93,7 @@ mvn javafx:run
 
 ---
 
-## Project Structure
+# Project Structure
 
 ```
 system-simulation/
