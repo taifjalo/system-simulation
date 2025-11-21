@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainScreenController">
+    <center>
+        <Pane prefHeight="647.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+            <children>
+
+                <!-- ========== WORKFLOW DIAGRAM ========== -->
+
+                <!-- Reception Circle -->
+                <Circle fill="#3f6b3f" layoutX="138.0" layoutY="301.0" radius="36.0" stroke="#4f7d47" strokeWidth="2" />
+                <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="117.0" layoutY="277.0">
+                    <image>
+                        <Image url="@../img/Vector.png" />
+                    </image>
+                </ImageView>
+                <Text fill="#fffff9" layoutX="113.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reception">
+                    <font>
+                        <Font name="Impact" size="12.0" />
+                    </font>
+                </Text>
+                <Text fx:id="receptionCountText" fill="WHITE" layoutX="153.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                    <font>
+                        <Font name="Impact" size="18.0" />
+                    </font>
+                </Text>
+
+                <!-- Kitchen Circle -->
+                <Circle fill="#3f6b3f" layoutX="312.0" layoutY="302.0" radius="36.0" stroke="#4f7d47" strokeWidth="2" />
+                <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="291.0" layoutY="277.0">
+                    <image>
+                        <Image url="@../img/Group.png" />
+                    </image>
+                </ImageView>
+                <Text fill="#fffff9" layoutX="291.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kitchen">
+                    <font>
+                        <Font name="Impact" size="12.0" />
+                    </font>
+                </Text>
+                <Text fx:id="kitchenCountText" fill="WHITE" layoutX="327.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                    <font>
+                        <Font name="Impact" size="18.0" />
+                    </font>
+                </Text>
+
+                <!-- Counter Circle -->
+                <Circle fill="#3f6b3f" layoutX="486.0" layoutY="303.0" radius="36.0" stroke="#4f7d47" strokeWidth="2" />
+                <ImageView fitHeight="29.0" fitWidth="26.0" layoutX="462.0" layoutY="275.0">
+                    <image>
+                        <Image url="@../img/SVGRepo_iconCarrier.png" />
+                    </image>
+                </ImageView>
+                <Text fill="#fffff9" layoutX="466.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Counter">
+                    <font>
+                        <Font name="Impact" size="12.0" />
+                    </font>
+                </Text>
+                <Text fx:id="counterCountText" fill="WHITE" layoutX="495.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                    <font>
+                        <Font name="Impact" size="18.0" />
+                    </font>
+                </Text>
+
+                <!-- Delivery Circle -->
+                <Circle fill="#3f6b3f" layoutX="660.0" layoutY="301.0" radius="36.0" stroke="#4f7d47" strokeWidth="2" />
+                <ImageView fitHeight="23.0" fitWidth="31.0" layoutX="637.0" layoutY="281.0">
+                    <image>
+                        <Image url="@../img/Vector1.png" />
+                    </image>
+                </ImageView>
+                <Text fill="#fffff9" layoutX="640.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery">
+                    <font>
+                        <Font name="Impact" size="12.0" />
+                    </font>
+                </Text>
+                <Text fx:id="deliveryCountText" fill="WHITE" layoutX="677.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                    <font>
+                        <Font name="Impact" size="18.0" />
+                    </font>
+                </Text>
+
+                <!-- ========== CONNECTION LINES ========== -->
+
+                <!-- Green Lines (normal flow) -->
+                <Line endX="-10.0" endY="-69.8" layoutX="149.0" layoutY="318.0" startX="-10.0" startY="-104.8" stroke="#4f7d47" strokeLineCap="ROUND" strokeWidth="2.0" />
+                <Polygon fill="#4f7d47" layoutX="-156.0" layoutY="-148.0" points="300.0, 400.0, 290.0, 395.0, 290.0, 405.0" rotate="90.0" />
+
+                <Line endX="-10.0" endY="-88.0" layoutX="185.0" layoutY="391.0" startX="12.0" startY="-88.0" stroke="#4f7d47" strokeLineCap="ROUND" strokeWidth="2.0" />
+                <Line endX="50.6" endY="-98.8" layoutX="203.0" layoutY="401.0" startX="68.6" startY="-98.8" stroke="#4f7d47" strokeLineCap="ROUND" strokeWidth="2.0" />
+                <Polygon fill="#4f7d47" layoutX="-26.0" layoutY="-98.0" points="300.0, 400.0, 290.0, 395.0, 290.0, 405.0" />
+
+                <Line endX="-10.0" endY="-88.0" layoutX="360.0" layoutY="393.0" startX="12.8" startY="-88.0" stroke="#4f7d47" strokeLineCap="ROUND" strokeWidth="2.0" />
+                <Polygon fill="#4f7d47" layoutX="149.0" layoutY="-96.0" points="300.0, 400.0, 290.0, 395.0, 290.0, 405.0" />
+
+                <Line endX="-10.0" endY="-88.0" layoutX="533.0" layoutY="393.0" startX="15.8" startY="-88.0" stroke="#4f7d47" strokeLineCap="ROUND" strokeWidth="2.0" />
+                <Polygon fill="#4f7d47" layoutX="322.0" layoutY="-96.0" points="300.0, 400.0, 290.0, 395.0, 290.0, 405.0" />
+
+                <Line endX="50.6" endY="-98.8" layoutX="379.0" layoutY="403.0" startX="68.6" startY="-98.8" stroke="#4f7d47" strokeLineCap="ROUND" strokeWidth="2.0" />
+                <Line endX="50.6" endY="-98.8" layoutX="552.0" layoutY="403.0" startX="68.6" startY="-98.8" stroke="#4f7d47" strokeLineCap="ROUND" strokeWidth="2.0" />
+
+                <!-- Green from counter to served -->
+                <Line endX="-2.999969482421875" endY="-72.0" layoutX="499.0" layoutY="412.0" startX="43.0" startY="7.0" stroke="#4f7d47" strokeLineCap="ROUND" strokeWidth="2.0" />
+                <Polygon fill="#e10000" layoutX="414.0" layoutY="14.0" points="300.0, 400.0, 290.0, 395.0, 290.0, 405.0" rotate="60.0" />
+
+                <!-- Green from Delivery to served -->
+                <Line endX="2.0" endY="-29.16986083984375" layoutX="601.0" layoutY="450.0" startX="48.5999755859375" startY="-112.0" stroke="#4f7d47" strokeLineCap="ROUND" strokeWidth="2.0" />
+                <Polygon fill="#4f7d47" layoutX="309.0" layoutY="18.0" points="300.0, 400.0, 290.0, 395.0, 290.0, 405.0" rotate="120.0" />
+
+                <!-- Red from Delivery to Not P<id -->
+                <Line endX="40.5999755859375" endY="-28.79998779296875" layoutX="669.0" layoutY="444.0" startX="-9.0" startY="-106.0" stroke="#e10000" strokeLineCap="ROUND" strokeWidth="2.0" />
+                <Polygon fill="#4f7d47" layoutX="246.0" layoutY="17.0" points="300.0, 400.0, 290.0, 395.0, 290.0, 405.0" rotate="60.0" />
+
+                <!-- ========== TOP SECTION ========== -->
+
+                <!-- Arrival Circle -->
+                <Circle fill="#ffc927" layoutX="96.0" layoutY="49.0" radius="36.0" stroke="#ffbe0d" strokeWidth="2" />
+                <ImageView fitHeight="35.0" fitWidth="33.0" layoutX="80.0" layoutY="23.0">
+                    <image>
+                        <Image url="@../img/Group23.png" />
+                    </image>
+                </ImageView>
+                <Text layoutX="75.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arrival">
+                    <font>
+                        <Font name="Impact" size="16.0" />
+                    </font>
+                </Text>
+
+                <!-- Call Circle -->
+                <Circle fill="#ffc927" layoutX="182.0" layoutY="49.0" radius="36.0" stroke="#ffbe0d" strokeWidth="2" />
+                <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="162.0" layoutY="21.0">
+                    <image>
+                        <Image url="@../img/Group22.png" />
+                    </image>
+                </ImageView>
+                <Text layoutX="168.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Call">
+                    <font>
+                        <Font name="Impact" size="16.0" />
+                    </font>
+                </Text>
+
+                <!-- Gold curved paths from top circles -->
+                <Path fill="transparent" layoutX="-60.0" layoutY="-110.0" stroke="gold" strokeLineCap="ROUND" strokeWidth="2.0">
+                    <elements>
+                        <MoveTo x="150.0" y="160.0" />
+                        <CubicCurveTo controlX1="10.0" controlX2="200.0" controlY1="200.0" controlY2="200.0" x="200.0" y="230.0" />
+                    </elements>
+                </Path>
+
+                <Path fill="transparent" layoutX="-60.0" layoutY="-110.0" stroke="gold" strokeLineCap="ROUND" strokeWidth="2.0">
+                    <elements>
+                        <MoveTo x="250.0" y="160.0" />
+                        <CubicCurveTo controlX1="390.0" controlX2="200.0" controlY1="200.0" controlY2="200.0" x="200.0" y="230.0" />
+                    </elements>
+                </Path>
+
+                <Polygon fill="gold" layoutX="-111.0" layoutY="-219.0" points="250.0, 340.0, 240.0, 360.0, 260.0, 360.0" rotate="180.0" />
+
+                <!-- People icon node -->
+                <ImageView fitHeight="38.0" fitWidth="44.0" layoutX="125.0" layoutY="168.0">
+                    <image>
+                        <Image url="@../img/Group8.png" />
+                    </image>
+                </ImageView>
+                <Text fx:id="arrivalQueueCountText" layoutX="143.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                    <font>
+                        <Font name="Impact" size="18.0" />
+                    </font>
+                </Text>
+
+                <ImageView fitHeight="38.0" fitWidth="44.0" layoutX="205.0" layoutY="280.0">
+                    <image>
+                        <Image url="@../img/Group8.png" />
+                    </image>
+                </ImageView>
+                <Text fx:id="receptionQueueCountText" layoutX="232.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                    <font>
+                        <Font name="Impact" size="18.0" />
+                    </font>
+                </Text>
+
+                <ImageView fitHeight="38.0" fitWidth="44.0" layoutX="380.0" layoutY="280.0">
+                    <image>
+                        <Image url="@../img/Group8.png" />
+                    </image>
+                </ImageView>
+                <Text fx:id="kitchenQueueCountText" layoutX="395.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                    <font>
+                        <Font name="Impact" size="18.0" />
+                    </font>
+                </Text>
+
+                <ImageView fitHeight="38.0" fitWidth="44.0" layoutX="555.0" layoutY="280.0">
+                    <image>
+                        <Image url="@../img/Group8.png" />
+                    </image>
+                </ImageView>
+                <Text fx:id="counterQueueCountText" layoutX="570.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                    <font>
+                        <Font name="Impact" size="18.0" />
+                    </font>
+                </Text>
+
+
+                <!-- ========== BOTTOM SECTION ========== -->
+
+                <!-- Served Circle -->
+                <Circle fill="#28a745" layoutX="574.0" layoutY="448.0" radius="36.0" stroke="#4f7d47" strokeWidth="2" />
+                <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="548.0" layoutY="423.0">
+                    <image>
+                        <Image url="@../img/Vector2.png" />
+                    </image>
+                </ImageView>
+                <Text fill="#fffff9" layoutX="555.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Served">
+                    <font>
+                        <Font name="Impact" size="14.0" />
+                    </font>
+                </Text>
+                <Text fx:id="servedCountText" fill="WHITE" layoutX="583.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                    <font>
+                        <Font name="Impact" size="18.0" />
+                    </font>
+                </Text>
+
+                <!-- Not Paid Circle -->
+                <Circle fill="#e10000" layoutX="737.0" layoutY="446.0" radius="36.0" stroke="#da0000" strokeWidth="2" />
+                <ImageView fitHeight="24.0" fitWidth="26.0" layoutX="711.0" layoutY="428.0">
+                    <image>
+                        <Image url="@../img/Solid.png" />
+                    </image>
+                </ImageView>
+                <Text fill="#fffff9" layoutX="718.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Not Paid">
+                    <font>
+                        <Font name="Impact" size="12.0" />
+                    </font>
+                </Text>
+                <Text fx:id="notPaidCountText" fill="WHITE" layoutX="745.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                    <font>
+                        <Font name="Impact" size="18.0" />
+                    </font>
+                </Text>
+
+                <!-- ========== ANIMATION PANE ========== -->
+
+                <Pane fx:id="animationPane" layoutX="3.0" layoutY="-3.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: rgba(0, 0, 0, 0.1); -fx-border-color: rgba(255, 255, 255, 0.2); -fx-border-radius: 5;" />
+
+                <!-- ========== CONSOLE OUTPUT ========== -->
+
+                <VBox fx:id="consoleBox" layoutX="492.0" layoutY="12.0" prefHeight="165.0" prefWidth="278.0" spacing="5.0" styleClass="console-box">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Console Output">
+                            <font>
+                                <Font name="Impact" size="14.0" />
+                            </font>
+                        </Text>
+                        <TextArea fx:id="consoleArea" editable="false" prefHeight="126.0" prefWidth="257.0" styleClass="console-area" wrapText="true">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </TextArea>
+                    </children>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </VBox>
+
+                      <!-- ========== CONTROL BUTTONS ========== -->
+
+                      <!-- Back Button -->
+                <Button fx:id="btnBack" contentDisplay="TOP" layoutX="10.0" layoutY="527.0" onAction="#onBackButtonClicked" prefHeight="50.0" prefWidth="50.0" styleClass="side-buttons" text="Back">
+                    <tooltip>
+                        <Tooltip text="Back" />
+                    </tooltip>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/back-curved-arrow-svgrepo-com.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+                </Button>
+
+                      <!-- Stats Button -->
+                <Button fx:id="btnStats" contentDisplay="TOP" layoutX="695.0" layoutY="529.0" onAction="#onStatsButtonClicked" prefHeight="50.0" prefWidth="50.0" styleClass="side-buttons" text="Stats">
+                    <tooltip>
+                        <Tooltip text="Statistics" />
+                    </tooltip>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/stats-button-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+                </Button>
+
+                <!-- Media Controls Group -->
+                <HBox fx:id="controlBar" alignment="CENTER" layoutX="306.0" layoutY="537.0" prefHeight="37.0" prefWidth="200.0" spacing="20" styleClass="control-bar">
+                    <children>
+                        <Button fx:id="btnSlowDown" onAction="#onSlowDownButtonClicked" styleClass="media-button">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/slow-down-button-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                        </Button>
+                        <Button fx:id="btnPlay" onAction="#onPlayButtonClicked" styleClass="play-button" text="▶">
+                            <tooltip>
+                                <Tooltip text="Play/Pause" />
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="btnSpeed" onAction="#onSpeedButtonClicked" styleClass="media-button">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/speed-up-button-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                        </Button>
+                    </children>
+                </HBox>
+                <!-- RED LINE 1: From Reception to People -->
+                <Path fx:id="lineReceptionToPeople" fill="transparent" layoutX="1.0" layoutY="101.0" stroke="#e10000" strokeLineCap="ROUND" strokeWidth="2.0">
+                    <elements>
+                        <MoveTo x="100.0" y="200.0" />
+                        <LineTo x="60.0" y="200.0" />
+                        <LineTo x="60.0" y="85.0" />
+                        <LineTo x="100.0" y="85.0" />
+                    </elements>
+                </Path>
+                <Polygon fx:id="arrowReceptionToPeople" fill="#e10000" layoutX="111.0" layoutY="186.0" points="0.0,0.0,-10.0,-6.0,-10.0,6.0" />
+
+                <!-- RED LINE 2: From Delivery to Reception -->
+                <Path fx:id="lineDeliveryToReception" fill="transparent" layoutX="140.0" layoutY="-233.0" stroke="#e10000" strokeLineCap="ROUND" strokeWidth="2.0">
+                    <elements>
+                        <MoveTo x="522.0" y="495.0" />
+                        <LineTo x="522.0" y="420.0" />
+                        <LineTo x="80.0" y="420.0" />
+                        <LineTo x="80.0" y="500.0" />
+                    </elements>
+                </Path>
+                <Polygon fx:id="arrowDeliveryToReception" fill="#e10000" layoutX="394.0" layoutY="331.0" points="0.0,0.0,10.0,-6.0,10.0,6.0" rotate="90.0" />
+
+                <!-- RED LINE 3: From Counter to Reception (top path) -->
+                <Path fx:id="lineCounterToReceptionTop" fill="transparent" layoutX="139.0" layoutY="207.0" stroke="#e10000" strokeLineCap="ROUND" strokeWidth="2.0">
+                    <elements>
+                        <MoveTo x="330.0" y="130.0" />
+                        <LineTo x="330.0" y="170.0" />
+                        <LineTo x="260.0" y="170.0" />
+                        <LineTo x="260.0" y="130.0" />
+                    </elements>
+                </Path>
+                <Polygon fx:id="arrowCounterToReceptionTop" fill="#e10000" layoutX="214.0" layoutY="270.0" points="0.0,0.0,10.0,-6.0,10.0,6.0" rotate="30.0" />
+
+                <!-- RED LINE 4: From Delivery to Reception (bottom path) -->
+                <Path fx:id="lineCounterToReceptionBottom" fill="transparent" layoutX="139.0" layoutY="207.0" stroke="#e10000" strokeLineCap="ROUND" strokeWidth="2.0">
+                    <elements>
+                        <MoveTo x="330.0" y="145.0" />
+                        <LineTo x="330.0" y="170.0" />
+                        <LineTo x="100.0" y="170.0" />
+                        <LineTo x="100.0" y="130.0" />
+                    </elements>
+                </Path>
+                <Polygon fx:id="arrowCounterToReception" fill="#e10000" layoutX="234.0" layoutY="331.0" points="0.0,0.0,10.0,-6.0,10.0,6.0" rotate="90.0" />
+
+
+                <!-- RED LINE 3: From Counter to Reception (top path) -->
+                <Path fx:id="lineCounterToReceptionLine" fill="transparent" layoutX="139.0" layoutY="207.0" stroke="#e10000" strokeLineCap="ROUND" strokeWidth="2.0">
+                    <elements>
+                        <MoveTo x="330.0" y="60.0" />
+                        <LineTo x="330.0" y="10.0" />
+                        <LineTo x="30.0" y="10.0" />
+                    </elements>
+                </Path>
+                <Polygon fx:id="arrowCounterToReceptionLine" fill="#e10000" layoutX="158.0" layoutY="217.0" points="0.0,0.0,10.0,-6.0,10.0,6.0" />
+
+            </children>
+        </Pane>
+    </center>
+</BorderPane>

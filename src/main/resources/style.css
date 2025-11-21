@@ -1,0 +1,122 @@
+.border-pane {
+    -fx-background-color: #F4F4F4; /* or any other color */
+}
+
+/*.root {*/
+/*    -fx-font-family: "Inria Sans";*/
+/*}*/
+
+.title {
+    -fx-background-color: #2F5030;
+    -fx-text-fill: white;
+    -fx-padding: 7 30 7 30; /* top, right, bottom, left */
+
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    -fx-border-style: solid;
+    -fx-background-insets: 0;  /* background fills from the inside */
+    -fx-border-insets: 10;       /* move border inside, leaving bg overflow */
+}
+
+.sp-input-container {
+    -fx-border-color: black;
+    -fx-border-width: 0.5;
+    -fx-border-style: solid;
+    -fx-padding: -11 10 10 10; /* top, right, bottom, left */
+}
+
+.customer-input-container {
+    -fx-border-color: black;
+    -fx-border-width: 0.5;
+    -fx-border-style: solid;
+    -fx-padding: 18 10 18 10; /* top, right, bottom, left */
+}
+
+.so-input-label {
+    -fx-background-color: #F4F4F4;
+    -fx-padding: 3px;
+}
+
+.cook-input-container {
+    -fx-border-color: black;
+    -fx-border-width: 0.5;
+    -fx-border-style: solid;
+    -fx-padding: 15 15 15 15; /* top, right, bottom, left */
+}
+
+.cooks-list-view {
+    -fx-border-color: black;
+    -fx-border-width: 0.5;
+    -fx-border-style: solid;
+}
+
+.cook-combo-box {
+    -fx-border-color: black;
+    -fx-border-width: 0.5;
+    -fx-border-style: solid;
+    -fx-border-radius: 7;
+    -fx-background-radius: 7;
+    -fx-background-color: white;
+}
+
+.cook-combo-box .arrow {
+    -fx-background-image: url('/images/dropdown-arrow.png');
+    -fx-background-size: contain; /* Fits image within bounds */
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-shape: null;
+    -fx-background-color: transparent;
+}
+
+.cook-combo-box .list-view {
+    -fx-border-color: black;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+    /*-fx-border-radius: 7;*/
+    /*-fx-background-radius: 7;*/
+}
+
+/*.cook-combo-box .list-cell {*/
+/*    -fx-background-color: transparent;*/
+/*    -fx-text-fill: black;*/
+/*    !*-fx-background-radius: 7;*!*/
+/*    -fx-border-color: #D0D0D0;*/
+    /*-fx-border-width: 0 0 1 0; !* Only bottom border *!*/
+    /*-fx-border-style: solid;*/
+/*}*/
+
+/*.cook-combo-box .list-cell:hover {*/
+/*    -fx-background-color: #D2D2D2;*/
+/*}*/
+
+.input-text-field {
+    fx-border-color: black;
+    -fx-border-width: 0.5;
+    -fx-border-style: solid;
+    -fx-border-radius: 7;
+    -fx-background-radius: 7;
+}
+
+.error-label {
+    -fx-text-fill: red;
+}
+
+.stats-button {
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    /*-fx-padding: 10 10;*/
+    -fx-graphic-text-gap: 1px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, -3, 0, 0); /* type, color, blur, spread, offsetX, offsetY */
+    -fx-cursor: hand;
+}
+
+.start-button {
+    -fx-background-color: #2F5030;
+    -fx-text-fill: white;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-padding: 7 16; /* top, bottom, left, right */
+    -fx-graphic-text-gap: 7px;
+    -fx-cursor: hand;
+}

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" styleClass="border-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <top>
+      <Label styleClass="title" text="PIZZERIA SIMULATION" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <center>
+      <HBox alignment="CENTER" prefWidth="740.0" spacing="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" spacing="13.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox prefWidth="200.0" spacing="13.0">
+                     <children>
+                        <VBox prefWidth="100.0" spacing="10.0" styleClass="sp-input-container" stylesheets="@style.css" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label styleClass="so-input-label" stylesheets="@style.css" text="Reception">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font></Label>
+                              <HBox prefWidth="200.0">
+                                 <children>
+                                    <Label prefWidth="60.0" text="Mean:*">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font></Label>
+                                    <TextField fx:id="receptionMean" prefWidth="50.0" styleClass="input-text-field" text="4" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font></TextField>
+                                 </children>
+                              </HBox>
+                              <HBox prefWidth="200.0">
+                                 <children>
+                                    <Label prefWidth="60.0" text="Variance:*">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font></Label>
+                                    <TextField fx:id="receptionVariance" prefHeight="10.0" prefWidth="50.0" styleClass="input-text-field" text="1.5" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font></TextField>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefWidth="100.0" spacing="10.0" styleClass="sp-input-container" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label styleClass="so-input-label" stylesheets="@style.css" text="Kitchen">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font></Label>
+                              <HBox prefWidth="200.0">
+                                 <children>
+                                    <Label prefWidth="60.0" text="Mean:*">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font></Label>
+                                    <TextField fx:id="kitchenMean" prefWidth="50.0" styleClass="input-text-field" text="15" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font></TextField>
+                                 </children>
+                              </HBox>
+                              <HBox prefWidth="200.0">
+                                 <children>
+                                    <Label prefWidth="60.0" text="Variance:*">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font></Label>
+                                    <TextField fx:id="kitchenVariance" prefHeight="10.0" prefWidth="50.0" styleClass="input-text-field" text="5" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font></TextField>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefWidth="200.0" spacing="13.0">
+                     <children>
+                        <VBox prefWidth="100.0" spacing="10.0" styleClass="sp-input-container" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label styleClass="so-input-label" stylesheets="@style.css" text="Counter">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font></Label>
+                              <HBox prefWidth="200.0">
+                                 <children>
+                                    <Label prefWidth="60.0" text="Mean:*">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font></Label>
+                                    <TextField fx:id="counterMean" prefWidth="50.0" styleClass="input-text-field" text="2" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font></TextField>
+                                 </children>
+                              </HBox>
+                              <HBox prefWidth="200.0">
+                                 <children>
+                                    <Label prefWidth="60.0" text="Variance:*">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font></Label>
+                                    <TextField fx:id="counterVariance" maxHeight="10.0" prefWidth="50.0" styleClass="input-text-field" text="0.5" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font></TextField>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefWidth="100.0" spacing="10.0" styleClass="sp-input-container" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label styleClass="so-input-label" stylesheets="@style.css" text="Delivery">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font></Label>
+                              <HBox prefWidth="200.0">
+                                 <children>
+                                    <Label prefWidth="60.0" text="Mean:*">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font></Label>
+                                    <TextField fx:id="deliveryMean" prefWidth="50.0" styleClass="input-text-field" text="20" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font></TextField>
+                                 </children>
+                              </HBox>
+                              <HBox prefWidth="200.0">
+                                 <children>
+                                    <Label prefWidth="60.0" text="Variance:*">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font></Label>
+                                    <TextField fx:id="deliveryVariance" prefHeight="10.0" prefWidth="50.0" styleClass="input-text-field" text="5" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font></TextField>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefWidth="200.0" spacing="15.0" styleClass="customer-input-container">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" prefWidth="100.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Call in customer">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <HBox alignment="CENTER_LEFT" prefWidth="200.0" spacing="8.0">
+                                 <children>
+                                    <Label text="Mean:*">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font></Label>
+                                    <TextField fx:id="callInCustomerMean" prefWidth="50.0" styleClass="input-text-field" text="10" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font></TextField>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefWidth="100.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Walk in customer">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <HBox alignment="CENTER_LEFT" prefWidth="200.0" spacing="8.0">
+                                 <children>
+                                    <Label text="Mean:*">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font></Label>
+                                    <TextField fx:id="walkInCustomerMean" prefWidth="50.0" styleClass="input-text-field" text="15" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font></TextField>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox maxHeight="-Infinity" prefHeight="270.0" spacing="10.0" styleClass="cook-input-container" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Label text="Number of cooks:*">
+                           <font>
+                              <Font size="11.0" />
+                           </font></Label>
+                        <TextField fx:id="numberOfCooks" onAction="#handleCooksInput" prefWidth="50.0" styleClass="input-text-field" text="4">
+                           <font>
+                              <Font size="10.0" />
+                           </font></TextField>
+                     </children>
+                  </HBox>
+                  <ListView fx:id="cooks" prefWidth="200.0" styleClass="cooks-list-view">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin></ListView>
+                  <HBox alignment="CENTER_LEFT" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Label text="Simulation time">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="simulationTime" prefWidth="50.0" styleClass="input-text-field" text="1000">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="30.0" right="30.0" top="30.0" />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+   <bottom>
+      <VBox alignment="CENTER" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="alertLabel" alignment="CENTER" prefWidth="200.0" spacing="5.0" visible="false">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0">
+                     <image>
+                        <Image url="@images/warning.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="warningLabel" alignment="CENTER" styleClass="error-label" text="Fill all fields before starting">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button alignment="BOTTOM_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleStatsClick" prefHeight="40.0" prefWidth="40.0" styleClass="stats-button" text="Stats" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="18.0">
+                           <image>
+                              <Image url="@images/stats-button-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="startButton" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleStartClick" styleClass="start-button" text="Start">
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="12.0">
+                           <image>
+                              <Image url="@images/triangle-button.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="20.0" />
+         </BorderPane.margin>
+      </VBox>
+   </bottom>
+</BorderPane>

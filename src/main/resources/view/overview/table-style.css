@@ -1,0 +1,108 @@
+/* Table styling to match the green theme from your image */
+.table-view {
+    -fx-background-color: #f9f9f9;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 12px;
+    -fx-table-cell-border-width: 0;
+}
+
+/* Back button styling */
+.back-button {
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-graphic-text-gap: 1px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, -3, 0, 0); /* type, color, blur, spread, offsetX, offsetY */
+    -fx-cursor: hand;
+}
+
+
+/* Column header styling */
+.table-view .column-header-background {
+    -fx-background-color: #2F5030;
+}
+
+.table-view .column-header {
+    -fx-background-color: #2F5030;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: center-left;
+    -fx-pref-height: 45px;
+    -fx-background-insets: 0; /* Remove background insets */
+    -fx-padding: 0 0 0 -30px; /* Add left padding for visible left alignment */
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Table cell styling */
+.table-view .table-cell {
+    -fx-pref-height: 45px;
+    -fx-alignment: center-left;
+    -fx-background-insets: 0;
+}
+
+/* Row styling - alternating colors */
+.table-row-cell:even {
+    -fx-background-color: white;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #C3DEC4;
+}
+
+.table-row-cell {
+    -fx-pref-height: 45px;
+}
+
+/* Selected row styling */
+.table-row-cell:selected {
+    -fx-background-color: #a8d4a8;
+}
+
+.table-view .table-cell:selected {
+    -fx-background-color: #a8d4a8;
+    -fx-text-fill: black;
+}
+
+/* Remove focus indicators */
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: #a8d4a8;
+}
+
+/* VBox container styling */
+.root {
+    -fx-background-color: #f9f9f9;
+}
+
+/* Table scrollbar styling */
+.table-view .scroll-bar:vertical {
+    -fx-background-color: #e0e0e0;
+}
+
+.table-view .scroll-bar:vertical .track {
+    -fx-background-color: #e0e0e0;
+}
+
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #4a7c59;
+}
+
+.table-view .scroll-bar:horizontal {
+    -fx-background-color: #e0e0e0;
+}
+
+.table-view .scroll-bar:horizontal .track {
+    -fx-background-color: #e0e0e0;
+}
+
+.table-view .scroll-bar:horizontal .thumb {
+    -fx-background-color: #4a7c59;
+}
+
+/* Corner styling */
+.table-view .corner {
+    -fx-background-color: #4a7c59;
+}

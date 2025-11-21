@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/src/main/java/simu/backend/setup.sql" value="229833ac-58b8-4d30-a985-c0a139da4c75" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/229833ac-58b8-4d30-a985-c0a139da4c75/console.sql" value="229833ac-58b8-4d30-a985-c0a139da4c75" />
+  </component>
+</project>
